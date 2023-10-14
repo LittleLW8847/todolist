@@ -1,3 +1,12 @@
+how to run
+assume this will be on VScode and the computer has install necessary package to run React web app
+1.cd to the folder 
+2.run "npm start" command. 
+
+disclaimer: this doesn't have the can close the program and still save the current state. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +77,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
