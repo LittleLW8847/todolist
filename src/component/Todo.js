@@ -26,9 +26,16 @@ function Todo(){
 
     const removeTodo = id =>{
       const removeTask = [...toDos].filter(todo => todo.id !== id);
-
       setToDo(removeTask);
     }
+
+    const updateTodos = (todoID, newTask) => {
+      if(!newTask.text || /^\s*$/.test(newTask.text)){
+        return;
+      }
+
+      setToDo(prev => prev.map(item => (item.id === todoID? newTask: item)));
+    } 
     
   return (
     <div className='todoWrapper'>
@@ -36,7 +43,8 @@ function Todo(){
         <Todolist
          toDos = {toDos} 
          completeTodo = {completeTodo} 
-         removeTodo={removeTodo}/>
+         removeTodo={removeTodo}
+         updateTodos = {updateTodos}/>
     </div>
   )
 }
