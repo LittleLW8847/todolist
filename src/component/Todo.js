@@ -6,11 +6,9 @@ function Todo(){
     const [toDos, setToDo] = useState([]); 
 
     const addToDo = todo =>{
-
       if(!todo.text || /^\s*$/.test(todo.text)){
         return;
       }
-
       const newToDos = [todo, ...toDos]
         setToDo(newToDos);
     }
@@ -25,13 +23,20 @@ function Todo(){
       })
       setToDo(updateTodos);
     }
+
+    const removeTodo = id =>{
+      const removeTask = [...toDos].filter(todo => todo.id !== id);
+
+      setToDo(removeTask);
+    }
     
   return (
     <div className='todoWrapper'>
         <Todoform onSubmit = {addToDo}/>
         <Todolist
          toDos = {toDos} 
-         completeTodo = {completeTodo} />
+         completeTodo = {completeTodo} 
+         removeTodo={removeTodo}/>
     </div>
   )
 }
