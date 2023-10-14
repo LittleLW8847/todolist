@@ -6,6 +6,14 @@ assume this will be on VScode and the computer has install necessary package to 
 disclaimer: this doesn't have the can close the program and still save the current state. 
 
 
+how to use the app
+
+1.you can add your "to do task" in the test input
+2.each to do task row has 2 symbols delete task and edit respectively 
+3.when you click on edit to do task another input form will show up below the main one you can edit your todo list in the said below input form
+4.if you complete any task you can click the text to marked as tasked complete as the task will grayed out
+
+
 
 # Getting Started with Create React App
 
